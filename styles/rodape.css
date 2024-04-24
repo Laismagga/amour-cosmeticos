@@ -1,0 +1,119 @@
+.rodape__cadastro {
+    background-color: #f2f2f2; 
+    padding: 30px;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    font-weight: bold;
+}
+
+.formulario {
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--cor-de-fundo); 
+    color: black; 
+}
+
+button.botao {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: black; 
+    color: var(--cor-de-fundo); 
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+button.botao:hover {
+    background-color: var(--cor-de-fundo); 
+    color: black; 
+}
+
+.container__rodape {
+    display: flex;
+    text-align: center;
+    background-color: var(--cor-terciaria);
+    padding: 20px 50px;
+}
+.rodape__colunas {
+    background-color: #f2f2f2; 
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.coluna {
+    flex: 1;
+    margin-right: 20px; 
+}
+
+
+.categorias {
+    list-style: none; 
+    padding: 0;
+    color: black;
+    font-size: 15px;
+}
+
+.categorias li {
+    margin-bottom: 5px; 
+    cursor: pointer;
+}
+
+.categorias li:hover {
+    text-decoration: underline; 
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 20px; 
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    button.botao {
+        width: 100%;
+    }
+
+    button.botao {
+        margin-top: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 18px; 
+    }
+
+    input[type="text"],
+    input[type="email"],
+    button.botao {
+        padding: 10px; 
+        font-size: 14px; 
+    }
+
+.rodape__colunas {
+    flex-direction: column; /
+}
+
+.coluna {
+    margin-right: 0; 
+    margin-bottom: 20px; 
+}
+}

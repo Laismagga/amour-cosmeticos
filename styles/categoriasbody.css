@@ -1,0 +1,39 @@
+.categorias__topo {
+    background-color: var(--cor-terciaria); 
+    padding: 10px; 
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.categorias__topo ul {
+    list-style-type: none;
+    margin: 13px;
+    display: flex; 
+}
+
+.categorias__topo li {
+    margin-right: 20px; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.categorias__topo a {
+    text-decoration: none;
+    color: var(--cor-secundaria); 
+    padding: 5px; 
+    border-bottom: 2px solid transparent; 
+    transition: border-bottom-color 0.3s;
+}
+
+.categorias__topo a:hover {
+    border-bottom-color: var(--cor-secundaria); 
+}
+
+@media screen and (max-width: 768px) {
+    .categorias__topo {
+        overflow-x: auto;
+        padding: 0;
+    }
+    }

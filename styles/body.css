@@ -1,0 +1,121 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#imagem {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+.imagem__corpo {
+   padding: 15px 0; 
+}
+
+.imagem__promo {
+    padding: 15px 110px; 
+    cursor: pointer;
+ }
+
+.categorias__marca {
+    display: flex;
+    background-color: var(--cor-de-fundo);
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.categoria__marca {
+    margin: 20px;
+    padding: 10px 30px;
+    background-color: var(--cor-de-fundo);
+    border: 2px solid var(--cor-de-fundo);
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.categoria__marca:hover {
+    background-color: var(--cor-secundaria); 
+    color: var(--cor-de-fundo); 
+}
+
+.texto__marcas {
+    font-size: 28px; 
+    font-weight: bold;
+    padding: 50px 0 5px;
+    color: black;
+    display: flex;
+    justify-content: center
+} 
+
+.produtos {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: border-color 0.3s; 
+    cursor: pointer;
+}
+
+.produtos:hover {
+    border-color: #666; 
+}
+
+.produtos img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.produtos_info h2 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold; 
+}
+
+.produtos_info .descrição__produtos {
+    margin-top: 10px;
+}
+
+.estrelas__produtos {
+    margin-top: 10px;
+}
+
+.estrelas__produtos img {
+    width: 100px; 
+}
+
+.preço__produtos {
+    margin-top: 10px;
+    font-weight: bold; 
+}
+
+@media screen and (max-width: 768px) {
+  .body {
+    max-width: 100%;
+  }
+
+.categorias__marca {
+  overflow-x: auto;  
+}
+#imagem {
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+}
+
+.imagem__promo {
+  padding: 0 0;
+}
+
+.texto__marcas {
+  font-size: 90%; 
+}
+}

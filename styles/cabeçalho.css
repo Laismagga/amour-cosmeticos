@@ -1,0 +1,192 @@
+header {
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1% 10%;
+    width: 80%;
+}
+
+.faixa {
+    display: flex; 
+    justify-content: center; 
+    cursor: pointer;
+}
+
+.banner__mobile {
+    display: none; 
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 80%;
+}
+
+.brand {
+    width: 30%;
+    padding: 0 10px; 
+    cursor: pointer;
+}
+
+.brand img {
+    width: 100%;
+}
+
+.barra__pesquisa::placeholder {
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--branco);
+    background: url("../img/Lupa.svg") no-repeat;
+    background-position: 1em;
+}
+
+.barra__pesquisa {
+    text-align: center;
+    display: flex;
+    width: 80%;
+    height: 40px;
+    margin-right: 8%;
+    
+}
+
+.barra__pesquisa input[type="text"] {
+    padding: 0px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px 0 0 6px;
+    width: 100%;
+}
+
+.barra__pesquisa button {
+    cursor: pointer;
+    border: none;
+    padding: 0px;
+    background-color: var(--cor-terciaria);
+    border-radius: 0 6px 6px 0;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.botao__pesquisa:hover {
+    background-color:  #DBD3AF;
+}
+
+.botao__pesquisa img {
+     height: 40px;
+}
+
+.botao__conta {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+    font-weight: bold;
+    padding: 5px;
+}
+.botao__conta span {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.botao__conta p {
+    margin: 5px;
+    font-size: 10px;
+}
+
+.botao__conta img {
+    width: 20px;
+    position: relative;
+    top: 7px;
+    left: 0px;
+}
+
+.botao__favoritos {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.botao__favoritos img {
+    width: 25px;
+}
+
+.botao__carrinho {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.botao__carrinho img {
+    width: 25px;
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        display: flex;
+        align-items: center;
+        padding: 1% 10%;
+        width: 80%;
+        height: auto; 
+    }
+
+.banner__desktop {
+    display: none; 
+}
+
+.banner__mobile {
+    display: block; 
+}
+
+.faixa img {
+     width: 200%;
+}
+
+.container {
+    width: 100%; 
+    display: flex;                                                                   
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand img {
+    width: 80%;
+}
+
+.botao__topo {
+    width: 50%;
+}
+
+.botão__topo img{
+max-width: 50px;
+}
+
+.barra__pesquisa {
+   width: 100%;
+}
+
+.botao__conta {
+     display: none;
+
+    }
+}

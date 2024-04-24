@@ -1,0 +1,20 @@
+@import url("styles/cabeçalho.css");
+@import url("styles/categoriasbody.css");
+@import url("styles/menuhamburger.css");
+@import url("styles/body.css");
+@import url("styles/rodape.css");
+
+:root {
+    --cor-de-fundo: #FFFFFF;
+    --cor-secundaria: #970C10;
+    --cor-terciaria: #F2ECCE;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-de-fundo);
+    color:  var(--cor-secundaria);
+    margin: 0 0%;
+    max-width: 100%;
+}
+
+
