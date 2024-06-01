@@ -1,8 +1,9 @@
 @import url("styles/cabeçalho.css");
 @import url("styles/categoriasbody.css");
-@import url("styles/menuhamburger.css");
 @import url("styles/body.css");
 @import url("styles/rodape.css");
+@import url("styles/carousel.css");
+@import url("styles/menu-hamburger.css");
 
 :root {
     --cor-de-fundo: #FFFFFF;

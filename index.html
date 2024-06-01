@@ -5,16 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AMOUR - Perfumaria, Produtos de beleza, Cosméticos e mais!</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="caroussel.js" defer></script>
+    <script src="carousel.js" defer></script>
+    <script src="menu.js" defer></script>
+    
+    <style>
+        .menu-hamburguer {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            z-index: 999;
+        }
+        .botao__carrinho:hover .menu-hamburguer {
+            display: block;
+        }
+    </style>
 </head>
 <body>
 
- <div class="faixa">
-       <img class="banner__desktop" src="assets/Banner.png" alt="Banner de promoção">
-       <img class="banner__mobile" src="assets/BannerMobile.png" alt="Banner de promoção">
-    </div>
-    <header>
-        <div class="container">
+<div class="faixa">
+    <img class="banner__desktop" src="assets/Banner.png" alt="Banner de promoção">
+    <img class="banner__mobile" src="assets/BannerMobile.png" alt="Banner de promoção">
+</div>
+<header>
+    <div class="container">
         <div class="brand">
             <img src="assets/LogoAmour.png" alt="Logo da AMOUR">
         </div>
@@ -24,33 +39,38 @@
         </div>
     </div>
     <div class="botoes">
-            <button class="botao__conta">
-                <img src="assets/Usuario.png" alt="Ícone de conta">
-                <span>Minha Conta</span>
-                <p>Entre ou cadastre-se</p>
-            </button>
-            <button class="botao__favoritos">
-                <img src="assets/Favoritos.png" alt="Ícone de favoritos">
-
-            <button class="botao__carrinho">
-                <img src="assets/Carrinho.png" alt="Ícone de usuario">
-        </div>
+        <button class="botao__conta">
+            <img src="assets/Usuario.png" alt="Ícone de conta">
+            <span>Minha Conta</span>
+            <p>Entre ou cadastre-se</p>
+        </button>
+        <button class="botao__favoritos">
+            <img src="assets/Favoritos.png" alt="Ícone de favoritos">
+        </button>
+        <button class="botao__carrinho">
+            <img src="assets/Carrinho.png" alt="Ícone de carrinho">
+            <div class="menu-hamburguer">O carrinho está vazio</div>
+        </button>
+    </div>
     </header>
     <div class="categorias__topo">
         <ul>
-            <li><a href="#">Lançamentos</a></li>
-            <li><a href="#">Promoções</a></li>
-            <li><a href="#">Presentes</a></li>
-            <li><a href="#">Perfumaria</a></li>
-            <li><a href="#">Corpo e Banho</a></li>
-            <li><a href="#">Maquiagem</a></li>
-            <li><a href="#">Cabelos</a></li>
-            <li><a href="#">Skincare</a></li>
-            <li><a href="#">Infantil</a></li>
-            <li><a href="#">Pets</a></li>
-            <li><a href="#">Casa</a></li>
+            <li class="category"><a href="#">Lançamentos</a></li>
+            <li class="category"><a href="#">Promoções</a></li>
+            <li class="category"><a href="#">Presentes</a></li>
+            <li class="category"><a href="#">Perfumaria</a></li>
+            <li class="category"><a href="#">Corpo e Banho</a></li>
+            <li class="category"><a href="#">Maquiagem</a></li>
+            <li class="category"><a href="#">Cabelos</a></li>
+            <li class="category"><a href="#">Skincare</a></li>
+            <li class="category"><a href="#">Infantil</a></li>
+            <li class="category"><a href="#">Pets</a></li>
+            <li class="category"><a href="#">Casa</a></li>
         </ul>
     </div>
+    </body>
+    </html>
+
         <div class="imagem__corpo">
            <img src="assets/PessoaBanner.png" alt="Imagem de mulher fazendo skincare" id="imagem">
         </div>
@@ -61,6 +81,18 @@
         <button class="categoria__marca">Brindes</button>
         <button class="categoria__marca">Refil de Produtos</button>
     </div>
+    <div class="carousel-container">
+      <div class="carousel-slide">
+        <img src="assets/img1.png" alt="Imagem 1">
+        <img src="assets/img2.png" alt="Imagem 2">
+        <img src="assets/img3.png" alt="Imagem 3">
+      </div>
+      <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+      <a class="next" onclick="moveSlide(1)">&#10095;</a>
+    </div>
+
+    </body>
+    </html>
     <div class="imagem__promo">
         <img src="assets/PromoBanner.png" alt="Imagem de promoção" id="imagem">
      </div>
@@ -75,6 +107,7 @@
                 <p class="preço__produtos">R$ 100,00</p>
             </div>
         </div>
+        
         <div class="produtos">
             <img src="assets/Perfume.png" alt="Produto 2">
             <div class="produtos_info">

@@ -27,8 +27,13 @@
     transition: border-bottom-color 0.3s;
 }
 
-.categorias__topo a:hover {
-    border-bottom-color: var(--cor-secundaria); 
+.categorias__topo li {
+    margin-bottom: 5px; 
+    cursor: pointer;
+}
+
+.categorias__topo li:hover {
+    text-decoration: underline; 
 }
 
 @media screen and (max-width: 768px) {
