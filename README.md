@@ -19,3 +19,4 @@ Amour é dedicado a fornecer uma experiência de compra excepcional para os aman
 
 - HTML5
 - CSS3
+- JAVASCRIPT
